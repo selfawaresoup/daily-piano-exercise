@@ -5,4 +5,5 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'rack'
 gem 'thin'
-gem "minitest"
+gem 'minitest'
+gem 'rake'

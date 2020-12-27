@@ -59,6 +59,19 @@ task :format_musecore_svg do
     'broken_chord_a_major',
     'broken_chord_a_sharp_major',
     'broken_chord_b_major',
+
+    'broken_chord_c_minor',
+    'broken_chord_c_sharp_minor',
+    'broken_chord_d_minor',
+    'broken_chord_d_sharp_minor',
+    'broken_chord_e_minor',
+    'broken_chord_f_minor',
+    'broken_chord_f_sharp_minor',
+    'broken_chord_g_minor',
+    'broken_chord_g_sharp_minor',
+    'broken_chord_a_minor',
+    'broken_chord_a_sharp_minor',
+    'broken_chord_b_minor',
   ]
 
   svg_line = '<svg width="1000px" height="500px" viewBox="150 650 2700 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny">'

@@ -119,3 +119,13 @@ class MajorBrokenChord < Part
     self.new(root)
   end
 end
+
+class MinorBrokenChord < MajorBrokenChord
+  def title
+    "Broken Chord: #{@root_note.name} minor"
+  end
+
+  def notation_identifier
+    "broken_chord_#{@root_note.to_s}_minor".downcase
+  end
+end

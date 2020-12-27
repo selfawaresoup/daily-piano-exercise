@@ -29,6 +29,7 @@ class Exercise
       MinorNaturalScale.from_number(rnd.rand(12)),
       MinorHarmonicScale.from_number(rnd.rand(12)),
       MajorBrokenChord.from_number(rnd.rand(12)),
+      MinorBrokenChord.from_number(rnd.rand(12)),
     ]
   end
 end

@@ -19,7 +19,7 @@ body {
 
     display: grid;
     grid-template-columns: 4rem 1fr 4rem;
-    grid-template-rows: 4rem 4rem 1rem auto 1rem 2rem;
+    grid-template-rows: 4rem 4rem 1rem auto 1rem 4rem;
     grid-template-areas: 
     ". .        ."
     ". header   ."

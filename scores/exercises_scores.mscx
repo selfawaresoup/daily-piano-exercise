@@ -13578,6 +13578,9 @@
               <tpc>23</tpc>
               </Note>
             </Chord>
+          <BarLine>
+            <subtype>end</subtype>
+            </BarLine>
           </voice>
         </Measure>
       <TBox>
@@ -14391,6 +14394,9 @@
               <tpc>20</tpc>
               </Note>
             </Chord>
+          <BarLine>
+            <subtype>end</subtype>
+            </BarLine>
           </voice>
         </Measure>
       <TBox>
@@ -28799,6 +28805,9 @@
               <tpc>23</tpc>
               </Note>
             </Chord>
+          <BarLine>
+            <subtype>end</subtype>
+            </BarLine>
           </voice>
         </Measure>
       <Measure>
@@ -29584,6 +29593,9 @@
               <tpc>20</tpc>
               </Note>
             </Chord>
+          <BarLine>
+            <subtype>end</subtype>
+            </BarLine>
           </voice>
         </Measure>
       <Measure>

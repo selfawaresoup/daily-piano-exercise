@@ -31,6 +31,10 @@ class MajorScale < Part
     "Scale: #{@root_note.name} major"
   end
 
+  def short_name
+    "#{@root_note.name}maj"
+  end
+
   def notation_identifier
     "scale_#{@root_note.to_s}_major".downcase
   end
@@ -66,6 +70,10 @@ class MinorNaturalScale < Part
     "Scale: #{@root_note.name} minor"
   end
 
+  def short_name
+    "#{@root_note.name}min"
+  end
+
   def notation_identifier
     "scale_#{@root_note.to_s}_minor_natural".downcase
   end
@@ -79,6 +87,10 @@ end
 class MinorHarmonicScale < MinorNaturalScale
   def title
     "Scale: #{@root_note.name} harmonic minor"
+  end
+
+  def short_name
+    "#{@root_note.name}"
   end
 
   def notation_identifier
@@ -110,6 +122,10 @@ class MajorBrokenChord < Part
     "Broken Chord: #{@root_note.name} major"
   end
 
+  def short_name
+    "#{@root_note.name}maj"
+  end
+
   def notation_identifier
     "broken_chord_#{@root_note.to_s}_major".downcase
   end
@@ -123,6 +139,10 @@ end
 class MinorBrokenChord < MajorBrokenChord
   def title
     "Broken Chord: #{@root_note.name} minor"
+  end
+
+  def short_name
+    "#{@root_note.name}min"
   end
 
   def notation_identifier

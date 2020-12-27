@@ -72,3 +72,61 @@ body > footer span {
 .part img {
     width: 100%;
 }
+
+.recent {
+    padding: 0;
+    list-style: none;
+}
+
+.recent li {
+    margin-bottom: 1rem;
+}
+
+.exercise-summary {
+    max-width: 30rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    padding: 1rem;
+    border: 1px solid #777;
+
+    color: #000;
+}
+
+.exercise-summary:hover {
+    color: rgb(139, 11, 101);
+    border-color: rgb(139, 11, 101);
+}
+
+.exercise-summary span {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.exercise-summary .index {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px)  {
+    body {
+        font-size: 10px;
+        grid-template-columns: 1rem 1fr 1rem;
+        grid-template-rows: 1rem 4rem 1rem auto 1rem 2rem;
+    }
+
+    .exercise-header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .exercise-header h1 {
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .exercise-header a {
+        margin-left: 0
+    }
+}

@@ -1,4 +1,6 @@
-<a href="/exercise/<%= exercise.index %>">
-  <%= exercise.index %>:
-  <%= exercise.parts.map {|p| p.title}.join(", ") %>
+<a href="/exercise/<%= exercise.index %>" class="exercise-summary">
+  <span class="index"><%= exercise.index %>:</span>
+  <span>
+  <%= exercise.parts.map {|p| p.short_name}.join("</span><span>") %>
+  </span>
 </a>

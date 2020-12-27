@@ -1,3 +1,7 @@
+<% content_for :title do %>
+  Index
+<% end %>
+
 <% content_for :header do %>
   <h1>Daily Piano Exercise</h1>
 
@@ -10,7 +14,7 @@
   </p>
 
   <h2>Recent</h2>
-  <ul>
+  <ul class="recent">
     <% recent.each do |exercise| %>
       <li>
         <%= erb :exercise_summary, locals: {exercise: exercise} %>

@@ -5,6 +5,14 @@
         <link rel="stylesheet" type="text/css", href="/style.css" />
     </head>
     <body>
-        <%= yield %>
+        <header>
+            <%= yield_content :header %>
+        </header>
+        <main>
+            <%= yield_content :main %>
+        </main>
+        <footer>
+            <span><%= erb :license %></span> <span><a href="https://www.aesthr.com">Esther Weidauer</a></span>
+        </footer>
     </body>
 </html>

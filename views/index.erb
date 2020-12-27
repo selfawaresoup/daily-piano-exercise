@@ -1,4 +1,21 @@
-<h2>Latest Exercise</h2>
-<p><%= latest_exercise %></p>
+<% content_for :header do %>
+  <h1>Daily Piano Exercise</h1>
 
-<h2>Previously</h2>
+<% end %>
+
+<% content_for :main do %>
+  <h2>Latest</h2>
+  <p>
+    <%= erb :exercise_summary, locals: {exercise: latest_exercise} %>
+  </p>
+
+  <h2>Recent</h2>
+  <ul>
+    <% recent.each do |exercise| %>
+      <li>
+        <%= erb :exercise_summary, locals: {exercise: exercise} %>
+      </li>
+    <% end %>
+  </ul>
+
+<% end %>

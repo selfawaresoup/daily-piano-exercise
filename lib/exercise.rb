@@ -12,8 +12,12 @@ class Exercise
   end
 
   def self.by_date(date)
-    index = date - START_DATE
+    index = (date - START_DATE).to_i
     self.new index
+  end
+
+  def date
+    START_DATE + index
   end
 
   private

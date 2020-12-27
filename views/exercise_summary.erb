@@ -1,0 +1,4 @@
+<a href="/exercise/<%= exercise.index %>">
+  <%= exercise.index %>:
+  <%= exercise.parts.map {|p| p.title}.join(", ") %>
+</a>

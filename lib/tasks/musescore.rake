@@ -46,9 +46,22 @@ task :format_musecore_svg do
     'scale_c_minor_harmonic',
     'scale_g_minor_harmonic',
     'scale_d_minor_harmonic',
+
+    'broken_chord_c_major',
+    'broken_chord_c_sharp_major',
+    'broken_chord_d_major',
+    'broken_chord_d_sharp_major',
+    'broken_chord_e_major',
+    'broken_chord_f_major',
+    'broken_chord_f_sharp_major',
+    'broken_chord_g_major',
+    'broken_chord_g_sharp_major',
+    'broken_chord_a_major',
+    'broken_chord_a_sharp_major',
+    'broken_chord_b_major',
   ]
 
-  svg_line = '<svg width="1000px" height="220px" viewBox="150 600 2700 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny">'
+  svg_line = '<svg width="1000px" height="500px" viewBox="150 650 2700 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny">'
 
   files.each_with_index do |filename, index|
     puts "Loading #{filename}"
@@ -56,6 +69,7 @@ task :format_musecore_svg do
     lines = svg.split "\n"
     lines[1] = svg_line
     formatted_svg = lines.join "\n"
-    File.write "./public/notation/#{target_names[index]}.svg", formatted_svg
+    target_name = target_names[index]
+    File.write "./public/notation/#{target_name}.svg", formatted_svg unless target_name.nil?
   end
 end

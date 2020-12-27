@@ -57,6 +57,5 @@ task :format_musecore_svg do
     lines[1] = svg_line
     formatted_svg = lines.join "\n"
     File.write "./public/notation/#{target_names[index]}.svg", formatted_svg
-    File.delete filename
   end
 end

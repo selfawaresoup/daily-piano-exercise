@@ -109,6 +109,23 @@ body > footer span {
     font-weight: 600;
 }
 
+.index-section {
+    margin-bottom: 3rem;
+}
+
+.changelog th,
+.changelog td {
+    vertical-align: top;
+}
+
+.changelog th {
+    line-height: 1.5rem;
+}
+
+.changelog ul {
+    margin: 0;
+}
+
 @media only screen and (max-width: 600px)  {
     body {
         font-size: 10px;

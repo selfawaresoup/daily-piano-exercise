@@ -83,7 +83,6 @@ body > footer span {
 }
 
 .exercise-summary {
-    max-width: 30rem;
     text-decoration: none;
     display: flex;
     flex-direction: row;

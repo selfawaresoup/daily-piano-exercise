@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock title %}
+
+{% block header %}
+  <h1>Daily Piano Exercise</h1>
+{% endblock header %}
+
+{% block main %}
+<section class="index-section">
+  <h2>Latest</h2>
+  <p class="latest">
+  </p>
+</section>
+
+<section class="index-section">
+  <h2>Recent</h2>
+  <ul class="recent">
+  </ul>
+</section>
+
+<section class="index-section">
+  <h2>Changelog</h2>
+  <table class="changelog">
+    <tbody>
+      <tr>
+        <th>2022-07-17</th>
+        <td><ul>
+          <li>Rebuilt in Rust, formerly Ruby</li>
+          <li>Switched to static site generation</li>
+        </ul></td>
+      </tr>
+      <tr>
+        <th>2020-12-29</th>
+        <td><ul>
+          <li>Moved accidentals for scales to key signatures</li>
+        </ul></td>
+      </tr>
+      <tr>
+        <th>2020-12-27</th>
+        <td><ul>
+          <li>Launch!</li>
+          <li>Major, ninor and harmonic minor scales</li>
+          <li>Major and minor broken chords</li>
+        </ul></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<script type="application/json" id="exercise-data">{{ exercises | safe }}</script>
+<script type="application/javascript" src="/main.js"></script>
+{% endblock main %}

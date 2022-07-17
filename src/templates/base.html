@@ -5,17 +5,17 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css", href="/style.css" />
         <link rel="icon" type="image/png" href="/icon.png" size="32x32" />
-        <title><%= yield_content :title %> | Daily Piano Exercise</title>
+        <title>{% block title %}Index{% endblock title %} | Daily Piano Exercise</title>
     </head>
     <body>
         <header>
-            <%= yield_content :header %>
+          {% block header %} {% endblock header %}
         </header>
         <main>
-            <%= yield_content :main %>
+            {% block main %} {% endblock main %}
         </main>
         <footer>
-            <span><%= erb :license %></span> <span><a href="https://www.aesthr.com">Esther Weidauer</a></span>
+            <span>{% include "license.html" %}</span> <span><a href="https://www.selfawaresoup.com">Esther Weidauer</a></span>
         </footer>
     </body>
 </html>

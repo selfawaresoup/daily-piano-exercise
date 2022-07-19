@@ -4,7 +4,7 @@ const data = JSON.parse(document.querySelector("#exercise-data").innerHTML)
 
 const today = (new Date()).toISOString().substring(0,10);
 today_index = data.find(ex => ex.date == today).index
-data.splice(today_index + 1)
+data.splice(today_index)
 
 const recent = data.slice(-6).reverse()
 const latest = recent.shift()

@@ -26,7 +26,7 @@ cargo run
 
 ```
 cd scores
-rb export.rb
+ruby export.rb
 ```
 
 Then run the site generator again

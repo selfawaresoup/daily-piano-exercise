@@ -12,7 +12,7 @@ extern crate lazy_static;
 extern crate serde;
 extern crate serde_json;
 
-const EXERCISE_COUNT: i32 = 1000;
+const EXERCISE_COUNT: i32 = 2000;
 
 fn main() {
   let mut exercises: Vec<Exercise> = vec![];

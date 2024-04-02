@@ -1,3 +1,7 @@
+# MOVED!!
+
+This repository has moved: https://codeberg.org/selfawaresoup/daily-piano-exercise
+
 # Daily Piano Exercises
 
 Generates a static website with a piano practice sheet for each day:
